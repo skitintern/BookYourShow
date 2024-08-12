@@ -13,7 +13,7 @@ const Navbar = () => {
     <div>
   <nav className="fnav">
     <div className="left">
-      <img src="logo-no-background.png" alt />
+      <img src="logo-no-background.png" alt="" />
       <div className="inp">
       <FontAwesomeIcon icon={faSearch} id='icon'/>
       
