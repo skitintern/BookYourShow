@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Movies from './components/Movies';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
 
     <Navbar/>
+    <Movies/>
     </>
     );
 }
