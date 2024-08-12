@@ -1,7 +1,13 @@
 import React from 'react'
 import '../components/Navbar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
+
+
+
+
   return (
     <div className='navbar'>
     <div>
@@ -9,7 +15,8 @@ const Navbar = () => {
     <div className="left">
       <img src="logo-no-background.png" alt />
       <div className="inp">
-        <i className="fa-solid fa-magnifying-glass" />
+      <FontAwesomeIcon icon={faSearch} id='icon'/>
+      
         <input type="text" placeholder=" Search for Movies, Events, Plays, Sports and Activaties" />
       </div>
     </div>

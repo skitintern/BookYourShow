@@ -24,16 +24,17 @@
   height: 7vh;
 }
 .inp {
+  
   margin-inline: 20px;
   display: flex;
   justify-content: space-between;
   width: 90vh;
   border-radius: 10px;
-  height: auto;
+overflow: hidden;
   background-color: white;
   border: 2px solid black;
 }
-.inp i {
+.inp #icon {
   color: black;
   margin: 17px 25px;
 }
@@ -43,8 +44,9 @@
   /* height: 40px; */
   background: none;
   border: none;
-  font: 14px Roboto, san-serif;
+ 
   text-align: left;
+ 
 }
 .fnav .right {
   display: flex;
