@@ -3,11 +3,9 @@ import '../components/Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
+
 const Navbar = () => {
-
-
-
-
+ 
   return (
     <div className='navbar'>
     <div>
@@ -44,7 +42,8 @@ const Navbar = () => {
     </div>
   </nav>
 </div>
-
+ 
+   
     </div>
   )
 }
