@@ -1,5 +1,6 @@
 import React from 'react'
 import '../components/Navbar.css'
+import'../style/allcss.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
@@ -28,8 +29,8 @@ const Navbar = () => {
   </nav>
   <nav className="sec-nav">
     <div className="s-left">
-      <p>Movies</p>
-      <p>Stream</p>
+      <a href='/movie'>Movies</a>
+      <a href='/stream'>Stream</a>
       <p>Events</p>
       <p>Plays</p>
       <p>Sports</p>
