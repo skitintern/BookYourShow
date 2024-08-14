@@ -19,7 +19,7 @@ const Navbar = () => {
       <div>
         <nav className="fnav">
           <div className="left">
-            <img src="logo-no-background.png" alt="logo" />
+            <img src="logo-no-background.png" alt="logo" onClick={() => window.location.href = '/'} />
             <div className="inp">
               <FontAwesomeIcon icon={faSearch} id="icon" />
 
