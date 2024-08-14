@@ -120,7 +120,7 @@ overflow: hidden;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-.fnav img {
+.fnav .left img {
   width: 300px; /* Set a fixed width for the logo */
   height: auto; /* Maintain aspect ratio */
 }
@@ -151,11 +151,12 @@ overflow: hidden;
 }
 
 .left input {
+  padding: 5px;
   width: 90%;
-  color: #999999;
   background: none;
+   font-size: 16px;
   border: none;
-  text-align: left;
+
 }
 
 .fnav .right {
@@ -176,7 +177,7 @@ overflow: hidden;
 }
 
 .right i, .right p {
-  font-size: 22px;
+  font-size: 15px;
   margin-inline: 10px;
 }
 
