@@ -28,11 +28,10 @@ const Navbar = () => {
     <div className="s-left">
       <a href='/movie'>Movies</a>
       <a href='/stream'>Stream</a>
-      <p>Events</p>
-      <p>Plays</p>
-      <p>Sports</p>
-      <p>Activaties</p>
-      <p>Buzz</p>
+      <a href='/stream'>Events</a>
+      <a href='/stream'>Plays</a>
+      <a href='/stream'>Activities</a>
+      <a href='/stream'>Buzz</a>
     </div>
     <div className="s-right">
       <p>ListYourShow</p>
