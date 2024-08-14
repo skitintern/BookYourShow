@@ -3,10 +3,9 @@ import '../components/Navbar.css'
 import'../style/allcss.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
-
-
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
- 
+  const navigate = useNavigate();
   return (
     <div className='navbar'>
     <div>
@@ -21,7 +20,7 @@ const Navbar = () => {
     </div>
     <div className="right">
       <p>Location</p>
-      <button>Sign in</button>
+      <button onClick={() => navigate("/movie")} >Sign in</button>
       <i className="fa-solid fa-bars" />
     </div>
   </nav>
