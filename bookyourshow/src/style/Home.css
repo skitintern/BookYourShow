@@ -1,5 +1,6 @@
 .slider-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   overflow: hidden;
   width: 100%; /* Adjust based on your needs */
@@ -44,6 +45,7 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 
 .card img {
@@ -51,7 +53,12 @@
   margin-inline: 20px;
   border-radius: 10px;
 }
-
+.card img:hover {
+  /* styles to apply on hover */
+  background-color: #f7f7f7;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
 .premiere {
   background-color: rgb(43, 49, 72);
   margin-top: 40px;

@@ -7,13 +7,17 @@ import Strem from './components/Strem';
 import Home from './components/Home';
 
 
+
 function App() {
   return (
     <>
    <Router>
     <Routes>
       <Route path='/' element={<Home/>}></Route>
+  
+
       <Route path='/movie' element={<Movies/>}></Route>
+
       <Route path='/stream' element={<Strem/>}></Route>
     </Routes>
    </Router>
