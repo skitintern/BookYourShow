@@ -1,6 +1,5 @@
 import React from "react";
 import '../style/allcss.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const LoginForm = ({ handleClose }) => {
   return (
     <div className="popup-overlay">
@@ -69,8 +68,8 @@ const LoginForm = ({ handleClose }) => {
           <input type="text" placeholder="+91 Continue with mobile number" />
         </div>
         <p className="terms">
-          I agree to the <a href="#">Terms & Conditions</a> &{" "}
-          <a href="#">Privacy Policy</a>
+          I agree to the <a href="/">Terms & Conditions</a> &{" "}
+          <a href="/">Privacy Policy</a>
         </p>
       </div>
     </div>
