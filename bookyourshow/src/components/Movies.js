@@ -1,11 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import '../style/allcss.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import axios from 'axios'
+
 
 const Movies = () => {
+   const [item,setitem] = useState([]);
+   const[loading,setloading]= useState(false);
+   const getitem =async(req,res)=>{
+    try {
+      setloading(false)
+      const response = await axios("/api/movie/a");
+        const ans = response.data;
+     console.log(ans) 
+     setitem(ans)
+     setloading(true);
+
+     
+      console.log("data fetched");
+      setloading(true);
+      
+    } catch (error) {
+        console.log(`fetching error ${error}`)
+    }
+   }
+   
+   useEffect(() => {
+     getitem();
+   }, [])
+   
+
+
+
+
   const settings = {
     dots: true,
     infinite: true,
@@ -53,7 +83,25 @@ const Movies = () => {
 
             </div>
         </div>
-        <div className='rightcontent'></div>
+        <div  className='rightcontent'>
+          <h2>Movies In Jaipur</h2>
+
+          <div className='filters'>
+             <button> hindi </button>
+             <button> english </button>
+          </div>
+
+          <div className='comming'>
+            <h2>Coming Soon</h2>
+            <a href=''>Explore Upcoming Movies  </a>
+          </div>
+
+        
+      
+
+     
+
+        </div>
 
       </div>
     </>

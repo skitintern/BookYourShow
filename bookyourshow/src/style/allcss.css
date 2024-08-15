@@ -55,7 +55,37 @@ gap: 10px;
     border-radius: 5px;
 }
 .rightcontent{
-    background-color: blue;
-    height: 200px;
-    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+}
+.filters{
+
+    display: flex;
+    gap: 10px;
+}
+.filters button{
+    background-color: white;
+    padding: 5px;
+    color: #fc3a5b;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+.comming{
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(227, 220, 220, 0.492);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comming a{
+    color: #fc3a5b;
+}
+.items{
+    display: flex;
+    flex-direction: column;
 }
