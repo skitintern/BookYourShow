@@ -201,12 +201,12 @@ overflow: hidden;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-.s-left a, .s-right p {
+.s-left a, .s-right a {
   color: white;
   margin-inline: 15px;
 }
 
-.s-left a:hover, .s-right p:hover {
+.s-left a:hover, .s-right a:hover {
   color: rgb(252, 87, 114);
 }
 

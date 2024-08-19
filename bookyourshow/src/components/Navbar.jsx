@@ -19,7 +19,11 @@ const Navbar = () => {
       <div>
         <nav className="fnav">
           <div className="left">
-            <img src="logo-no-background.png" alt="logo" onClick={() => window.location.href = '/'} />
+            <img
+              src="logo-no-background.png"
+              alt="logo"
+              onClick={() => (window.location.href = "/")}
+            />
             <div className="inp">
               <FontAwesomeIcon icon={faSearch} id="icon" />
 
@@ -46,10 +50,11 @@ const Navbar = () => {
             <a href="/stream">Buzz</a>
           </div>
           <div className="s-right">
-            <p>ListYourShow</p>
-            <p>Corporates</p>
-            <p>Offer</p>
-            <p>Gift Cards</p>
+            <a href="/">ListYourShow</a>
+            <a href="/corporate">Corporates</a>
+            <a href="/">Offer</a>
+            <a href="/">Gift Cards</a>
+            
           </div>
         </nav>
       </div>

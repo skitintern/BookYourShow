@@ -20,76 +20,193 @@ font-family: Arial, Helvetica, sans-serif;
     height: 50vh;
   }
 
-.content{
-    display: flex;
-    gap: 15px;
-    padding: 5px;
-    margin-left: 10%;
-    width: 80%;
-    height: 400px;
+.content {
+  display: flex;
+ 
+  max-width: 1200px;
+  margin: 0px auto;
+  gap: 20px;
 }
-.leftcontent{
 
-width: 30%;
-padding: 5px;
+/* Left Content (Filter Section) */
+.leftcontent {
+   color: #DC3558;
+
+flex: 1;
+  padding: 20px;
+ height: 110vh;
+  background-color: #EBEBEB;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leftcontent h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.options {
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.options .opt1,
+.options .opt2,
+.options .opt3 {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.options button {
+  padding: 10px;
+  font-size: 16px;
+ border-color: #DC3558;
+  color: #DC3558;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.options details {
 display: flex;
-flex-direction: column;
-gap: 10px;
 
+  padding: 10px 12px;
+     background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(229, 229, 229);
+    
 }
-.options{
-    display: flex;
+.options a{
+  
+text-align: center;
+width: 60%;
+
+margin-top: 5px;
+
+
+justify-content: center;
+margin-bottom: 10px;
+  color:#DC3558;
+  border: 1px solid rgb(156, 147, 147);
+}
+.options button:hover {
+  background-color: #b30000;
+  color: #fff;
+}
+
+/* Right Content (Movie List) */
+.rightcontent {
+  flex: 4;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rightcontent h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 10px;
+  font-size: 16px;
+  color: #DC3558;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #b30000;
+  color: #fff;
+}
+
+.comming {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.comming a {
+  display: inline-block;
+
+  font-size: 16px;
+  color: #DC3558;
+  text-decoration: none;
+}
+
+.comming a:hover {
+  text-decoration: underline;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between cards */
+  justify-content: space-between;
+}
+
+/* Movie Card Styles */
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  width: calc(33.333% - 20px); /* Adjust width to fit three cards in a row */
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+}
+
+.card1 img {
+  width: 100%;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
     flex-direction: column;
-    gap: 5px;
+  }
 
-}
-.options .opt1,.opt2,.opt3{
-    padding: 10px;
-    border: 1px solid black;
-}
-.options button{
-    padding: 10px;
-    border: 1px solid #fc3a5b;
-    color: #fc3a5b;
-    background-color: white;
-    border-radius: 5px;
-}
-.rightcontent{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: auto;
-    width: 100%;
-}
-.filters{
+  .leftcontent,
+  .rightcontent {
+    margin: 0 20px;
+  }
 
-    display: flex;
-    gap: 10px;
-}
-.filters button{
-    background-color: white;
-    padding: 5px;
-    color: #fc3a5b;
-    border: 1px solid grey;
-    border-radius: 15px;
-}
-.comming{
-    padding: 15px;
-    border-radius: 8px;
-    background-color: rgba(227, 220, 220, 0.492);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.comming a{
-    color: #fc3a5b;
-}
-.items{
-    display: flex;
-    flex-direction: column;
-}
+  .filters {
+    flex-wrap: wrap;
+  }
 
+  .filters button {
+    flex: 1 1 48%;
+    margin-bottom: 10px;
+  }
+}
 
 /* Popup content */
 .popup-overlay {

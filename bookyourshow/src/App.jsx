@@ -5,6 +5,7 @@ import Movies from './components/Movies';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Strem from './components/Strem';
 import Home from './components/Home';
+import Corporate from './components/Corporate';
 
 
 
@@ -19,6 +20,8 @@ function App() {
       <Route path='/movie' element={<Movies/>}></Route>
 
       <Route path='/stream' element={<Strem/>}></Route>
+      <Route path='/corporate' element={<Corporate/>}></Route>
+      
     </Routes>
    </Router>
 
