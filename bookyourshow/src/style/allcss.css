@@ -154,21 +154,22 @@ margin-bottom: 10px;
 .container1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* Space between cards */
+  gap: 10px; /* Space between cards */
   justify-content: space-between;
 }
 
 /* Movie Card Styles */
 .card1 {
+  padding: 10px ;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   transition: transform 0.3s;
-  width: calc(33.333% - 20px); /* Adjust width to fit three cards in a row */
+  width: calc(33.333% - 30px); /* Adjust width to fit three cards in a row */
 }
 
 .card1:hover {
@@ -177,7 +178,8 @@ margin-bottom: 10px;
 
 .card1 img {
   width: 100%;
-  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   object-fit: cover;
 }
 
@@ -308,3 +310,23 @@ text-align: center;
   color: #007bff;
   text-decoration: none;
 }
+
+.moviecard{
+  border-radius: 10px;
+  background-color: rgba(45, 95, 175, 0.345);
+  padding: 20px;
+  display: flex;
+  box-shadow: 4px 9px 8px grey;
+}
+.moviecard img{
+  height: 200px;
+  width: 200px;
+}
+.rightdetail{
+  margin-left: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+

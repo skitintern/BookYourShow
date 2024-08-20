@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+     
       <div className="slider-container">
         <Slider {...settings} className="slider">
           <div>

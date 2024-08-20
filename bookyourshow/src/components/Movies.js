@@ -6,9 +6,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
 import Loader from "./loader"
+import { Navigate, useNavigate } from "react-router";
 
 const Movies = () => {
-  const [item, setitem] = useState([]);
+  
   const [loading, setloading] = useState(false);
   const [movies, setMovies] = useState();
   const getitem = async (req, res) => {
@@ -69,7 +70,7 @@ const Movies = () => {
   };
   return (
     <>
-      <Navbar />
+      
       <div className="slider-container">
         <Slider {...settings} className="slider">
           <div>
@@ -157,10 +158,16 @@ const Movies = () => {
 export default Movies;
 
 const MovieCard = ({ movie }) => {
-  
+  const [moviedetail, setmoviedetail] = useState();
+  const navigate = useNavigate();
+ 
 
   return (
-    <div className={"card1"}>
+   
+    
+    <div className={"card1"} onClick={()=>{
+     navigate(`/movie/${movie.movie_name}`)
+    }}>
       <img
         src={
           "https://www.youngisthan.in/wp-content/uploads/2015/07/Drishyam.jpg"
@@ -184,5 +191,6 @@ const MovieCard = ({ movie }) => {
         </p>
       </div>
     </div>
+   
   );
 };
