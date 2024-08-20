@@ -22,7 +22,6 @@ font-family: Arial, Helvetica, sans-serif;
 
 .content {
   display: flex;
- 
   max-width: 1200px;
   margin: 0px auto;
   gap: 20px;
@@ -36,22 +35,21 @@ flex: 1;
   padding: 20px;
   max-height: 110vh;
   height: fit-content;
-  background-color: #EBEBEB;
+  background-color: rgb(3, 3, 48);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 .leftcontent h2 {
-  color: black;
+  color: white;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
 .options {
- 
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 10px;
 }
 
 .options .opt1,
@@ -66,17 +64,19 @@ flex: 1;
   font-size: 16px;
  border-color: #DC3558;
   color: #DC3558;
+  background-color: transparent;
   border: 1px solid;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .options details {
 display: flex;
 
   padding: 10px 12px;
-     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(229, 229, 229);
+     background-color: transparent;
+     border-radius: 8px;
+   
     
 }
 .options a{
@@ -89,8 +89,10 @@ margin-top: 5px;
 
 justify-content: center;
 margin-bottom: 10px;
-  color:#DC3558;
-  border: 1px solid rgb(156, 147, 147);
+  color:white;
+  /* background-color: rgba(0, 149, 255, 0.434); */
+  border-radius: 3px;
+  border: 1px solid #DC3558;
 }
 .options button:hover {
   background-color: #b30000;

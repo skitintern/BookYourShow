@@ -16,10 +16,15 @@
 }
 
 .up {
-  display: flex;
-  padding: 0 8vh;
+ display: flex;
+  padding: 0px 8vh;
+  align-items: center;
   justify-content: space-between;
 }
+.up h2{
+  /* margin-top: 30px; */
+}
+
 
 .container p {
   color: rgb(220, 53, 88);
@@ -29,13 +34,13 @@
 }
 
 .container {
-  padding: 5vh 10vh;
+  padding: 0vh 10vh;
 }
 
 .container h2 {
   font-size: 24px;
   padding-left: 8vh;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   font-weight: 900;
   color: #333333;
 }

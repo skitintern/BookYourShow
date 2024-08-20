@@ -10,22 +10,49 @@ import Loader from "./loader"
 const Movies = () => {
   const [item, setitem] = useState([]);
   const [loading, setloading] = useState(false);
-  const [movies, setMovies] = useState(null);
+  const [movies, setMovies] = useState();
   const getitem = async (req, res) => {
     try {
       setloading(true);
       const response = await axios("/api/movie/a");
-      console.log(response);
-      const ans = response.data ;
-      console.log(ans);
+     
+      const ans = await response.data ;
+      
       setMovies(ans);
-      console.log("data fetched");
+
       setloading(false);
     } catch (error) {
       console.log(`fetching error ${error}`);
       setloading(false);
     }
   };
+  const hindimovie=async()=>{
+    try {
+      setloading(true);
+      const response = await axios("/api/movie/a");
+      const data = response.data;
+      const hindimovie = data.filter((e)=>e.language==='Hindi');
+      setMovies(hindimovie);   
+
+      setloading(false);
+    } catch (error) {
+      console.log(`fetching error ${error}`);
+      setloading(false);
+    }
+  }
+  const Englishmovie=async()=>{
+    try {
+      setloading(true);
+      const response = await axios("/api/movie/a");
+      const data = response.data;
+      const englishmovie = data.filter((e)=>e.language==='English');
+      setMovies(englishmovie);   
+      setloading(false);
+    } catch (error) {
+      console.log(`fetching error ${error}`);
+      setloading(false);
+    }
+  }
 
   useEffect(() => {
     getitem();
@@ -89,7 +116,7 @@ const Movies = () => {
               </details>
             </div>
             <div className="opt3">
-              <details open>
+              <details >
                 <summary>Format</summary>
                 <a href="/">2D</a>
                 <a href="/">4D X 3D</a>
@@ -104,9 +131,9 @@ const Movies = () => {
           <h2>Movies In Jaipur</h2>
 
           <div className="filters">
-            <button> Hindi </button>
-            <button> English </button>
-            <button> English 7D</button>
+            <button onClick={hindimovie}> Hindi </button>
+            <button onClick={Englishmovie}> English </button>
+            <button onClick={Englishmovie}> English 7D</button>
             <button> Multi Language</button>
           </div>
 
@@ -130,7 +157,7 @@ const Movies = () => {
 export default Movies;
 
 const MovieCard = ({ movie }) => {
-  console.log(movie);
+  
 
   return (
     <div className={"card1"}>
