@@ -124,7 +124,10 @@ const Corporate = () => {
           </div>
         </section>
         {sections.map((section, index) => (
-          <div key={index} className="section">
+          <div key={index} className="section" style={{
+            display:"flex",
+            flexDirection:(index+1)%2==0?"row":"row-reverse"
+          }}>
             <div className="section-content">
               <h1>{section.title}</h1>
               <p>{section.description}</p>
