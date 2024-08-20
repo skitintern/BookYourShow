@@ -124,10 +124,14 @@ const Corporate = () => {
           </div>
         </section>
         {sections.map((section, index) => (
-          <div key={index} className="section" style={{
-            display:"flex",
-            flexDirection:(index+1)%2==0?"row":"row-reverse"
-          }}>
+          <div
+            key={index}
+            className="section"
+            style={{
+              display: "flex",
+              flexDirection: (index + 1) % 2 == 0 ? "row" : "row-reverse",
+            }}
+          >
             <div className="section-content">
               <h1>{section.title}</h1>
               <p>{section.description}</p>
@@ -136,6 +140,37 @@ const Corporate = () => {
             <img src={section.imageUrl} alt={section.title} />
           </div>
         ))}
+        <div className="business-solutions">
+          <h2>OUR SUITE OF BUSINESS SOLUTIONS:</h2>
+          <div className="solutions-container">
+            <div
+              className="solution-card"
+              style={{ backgroundColor: "#4CAF50" }}
+            >
+              <h3>End-to-End Creative Support</h3>
+            </div>
+            <div
+              className="solution-card"
+              style={{ backgroundColor: "#F44336" }}
+            >
+              <h3>Marketing & E-mail Guidance</h3>
+            </div>
+            <div
+              className="solution-card"
+              style={{ backgroundColor: "#FFEB3B" }}
+            >
+              <h3>Bulk SMS Communication</h3>
+            </div>
+          </div>
+          <div className="cta-section">
+            <p>
+              Get priority support from the experts in the entertainment
+              industry.
+            </p>
+            <button className="cta-button">Access the complete suite</button>
+          </div>
+        </div>
+        
       </div>
     </>
   );
