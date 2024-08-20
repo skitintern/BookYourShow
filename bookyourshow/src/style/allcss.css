@@ -34,7 +34,8 @@ font-family: Arial, Helvetica, sans-serif;
 
 flex: 1;
   padding: 20px;
- height: 110vh;
+  max-height: 110vh;
+  height: fit-content;
   background-color: #EBEBEB;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,7 +82,7 @@ display: flex;
 .options a{
   
 text-align: center;
-width: 60%;
+width: 90%;
 
 margin-top: 5px;
 
