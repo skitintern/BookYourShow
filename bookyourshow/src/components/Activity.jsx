@@ -121,29 +121,28 @@ const Activity = () => {
        <div className="options">
          <div className="opt1">
            <details open>
-             <summary>Languages</summary>
-             <a href="/">Hindi</a>
-             <a href="/">English</a>
-             <a href="/">Multi Language</a>
+             <summary>Dates</summary>
+             <a href="/">Today</a>
+             <a href="/">Tomorrow</a>
+             <a href="/">This Weekend</a>
            </details>
          </div>
          <div className="opt2">
            <details open>
-             <summary>Genre</summary>
-             <a href="/">Drama</a>
+             <summary>Categories</summary>
+             <a href="/">Gaming</a>
              <a href="/">Adventure</a>
-             <a href="/">Comedy</a>
-             <a href="/">Thriller</a>
-             <a href="/">Animation</a>
-             <a href="/">Horror</a>
+             <a href="/">Unique Tour</a>
+             <a href="/">Tourism Activities</a>
+             <a href="/">Navratri celebration</a>
+             <a href="/">Events</a>
            </details>
          </div>
          <div className="opt3">
            <details>
-             <summary>Format</summary>
-             <a href="/">2D</a>
-             <a href="/">4D X 3D</a>
-             <a href="/">7D</a>
+             <summary>More Filters</summary>
+             <a href="/">Kids Allowed</a>
+             <a href="/">Outdoor Events</a>
            </details>
          </div>
 
