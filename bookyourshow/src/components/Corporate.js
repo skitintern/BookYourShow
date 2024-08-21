@@ -41,7 +41,7 @@ const Corporate = () => {
   ];
   return (
     <>
-      <Navbar />
+  
       <div className="App">
         <header className="header">
           <div className="header-content">
