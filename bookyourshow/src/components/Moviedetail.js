@@ -3,19 +3,23 @@ import { useParams } from 'react-router-dom';
 import Navbar from './Navbar';
 import "../style/allcss.css";
 import axios from 'axios';
+import Loader from './loader';
 const Moviedetail =()=> {
  const {movie_name} = useParams();
   const[moviedetail ,setdetail]=useState([]);
+  const[loading,setloading]=useState(false);
+  const[notfound,setnotfound]=useState();
   
   const getdetail=async()=>{
   
      try {
-        const response =  await axios("/api/movie/a");
+        setloading(true)
+        const response =  await axios(`/api/movie/a`);
+        const name = movie_name.toLowerCase();
         const data = await response.data;
-        const detail = data.filter((e)=>{
-          return e.movie_name===`${movie_name}`;
-        })
+        const detail = data.filter((e)=>e.movie_name.toLowerCase()===name)
        setdetail(detail);
+       setloading(false);
      } catch (error) {
         console.log("error!!")
      }
@@ -32,7 +36,10 @@ const Moviedetail =()=> {
 
   return (
     <div style={{padding:'40px'}}>
+      {loading&&<Loader/>}
+      {notfound}
       {moviedetail.map((e,id)=>{
+       
            return(
             <div key={id} className='moviecard'>
                 <img src={`${e.movie_thumbnail}`}></img>
