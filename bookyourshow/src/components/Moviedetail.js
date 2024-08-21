@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import Navbar from './Navbar';
 import "../style/allcss.css";
@@ -8,7 +8,7 @@ const Moviedetail =()=> {
  const {movie_name} = useParams();
   const[moviedetail ,setdetail]=useState([]);
   const[loading,setloading]=useState(false);
-  const[notfound,setnotfound]=useState();
+ 
   
   const getdetail=async()=>{
   
@@ -37,7 +37,7 @@ const Moviedetail =()=> {
   return (
     <div style={{padding:'40px'}}>
       {loading&&<Loader/>}
-      {notfound}
+  
       {moviedetail.map((e,id)=>{
        
            return(
