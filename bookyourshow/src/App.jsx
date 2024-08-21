@@ -8,7 +8,7 @@ import Home from './components/Home';
 import Corporate from './components/Corporate';
 import Moviedetail from './components/Moviedetail';
 import Navbar from './components/Navbar';
-
+import Activity from './components/Activity'
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
       <Route path='/movie/:movie_name' element={<Moviedetail/>}></Route>
 
       <Route path='/stream' element={<Strem/>}></Route>
+      <Route path='/activity' element={<Activity/>}></Route>
       <Route path='/corporate' element={<Corporate/>}></Route>
       
     </Routes>

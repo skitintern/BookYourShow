@@ -5,20 +5,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
-import Loader from "./loader"
+import Loader from "./loader";
 import { Navigate, useNavigate } from "react-router";
 
 const Movies = () => {
-  
   const [loading, setloading] = useState(false);
   const [movies, setMovies] = useState();
   const getitem = async (req, res) => {
     try {
       setloading(true);
       const response = await axios("/api/movie/a");
-     
-      const ans = await response.data ;
-      
+
+      const ans = await response.data;
+
       setMovies(ans);
 
       setloading(false);
@@ -27,33 +26,33 @@ const Movies = () => {
       setloading(false);
     }
   };
-  const hindimovie=async()=>{
+  const hindimovie = async () => {
     try {
       setloading(true);
       const response = await axios("/api/movie/a");
       const data = response.data;
-      const hindimovie = data.filter((e)=>e.language==='Hindi');
-      setMovies(hindimovie);   
+      const hindimovie = data.filter((e) => e.language === "Hindi");
+      setMovies(hindimovie);
 
       setloading(false);
     } catch (error) {
       console.log(`fetching error ${error}`);
       setloading(false);
     }
-  }
-  const Englishmovie=async()=>{
+  };
+  const Englishmovie = async () => {
     try {
       setloading(true);
       const response = await axios("/api/movie/a");
       const data = response.data;
-      const englishmovie = data.filter((e)=>e.language==='English');
-      setMovies(englishmovie);   
+      const englishmovie = data.filter((e) => e.language === "English");
+      setMovies(englishmovie);
       setloading(false);
     } catch (error) {
       console.log(`fetching error ${error}`);
       setloading(false);
     }
-  }
+  };
 
   useEffect(() => {
     getitem();
@@ -70,7 +69,6 @@ const Movies = () => {
   };
   return (
     <>
-      
       <div className="slider-container">
         <Slider {...settings} className="slider">
           <div>
@@ -117,7 +115,7 @@ const Movies = () => {
               </details>
             </div>
             <div className="opt3">
-              <details >
+              <details>
                 <summary>Format</summary>
                 <a href="/">2D</a>
                 <a href="/">4D X 3D</a>
@@ -160,21 +158,19 @@ export default Movies;
 const MovieCard = ({ movie }) => {
   const [moviedetail, setmoviedetail] = useState();
   const navigate = useNavigate();
- 
 
   return (
-   
-    
-    <div className={"card1"} onClick={()=>{
-     navigate(`/movie/${movie.movie_name}`)
-    }}>
+    <div
+      className={"card1"}
+      onClick={() => {
+        navigate(`/movie/${movie.movie_name}`);
+      }}
+    >
       <img
-        src={
-          `${movie.movie_thumbnail}`
-        }
+        src={`${movie.movie_thumbnail}`}
         alt={`${movie.movie_name} Thumbnail`}
         className={"thumbnail"}
-        />
+      />
       <div className={"details"}>
         <h2 className={"title"}>{movie.movie_name}</h2>
         <p className={"text"}>
@@ -191,6 +187,5 @@ const MovieCard = ({ movie }) => {
         </p>
       </div>
     </div>
-   
   );
 };
