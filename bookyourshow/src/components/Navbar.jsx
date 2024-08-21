@@ -4,8 +4,10 @@ import'../style/allcss.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 import LoginForm from '../components/LoginForm'
+import Location from './Location';
 const Navbar = () => {
   const [showLogin, setShowLogin] = useState(false);
+ const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleLoginClick = () => {
     setShowLogin(true);
@@ -14,6 +16,10 @@ const Navbar = () => {
   const handleClose = () => {
     setShowLogin(false);
   };
+
+   const togglePopup = () => {
+     setIsPopupOpen(!isPopupOpen);
+   };
   return (
     <div className="navbar">
       <div>
@@ -34,8 +40,11 @@ const Navbar = () => {
             </div>
           </div>
           <div className="right">
-            <p>Location</p>
-            <button onClick={handleLoginClick}>Sign In</button>
+            <div className="navbar-location" onClick={togglePopup}>
+              Location ⬇
+            </div>
+            <Location isOpen={isPopupOpen} onClose={togglePopup} />
+            <button className='btnsignin' onClick={handleLoginClick}>Sign In</button>
             {showLogin && <LoginForm handleClose={handleClose} />}
             <i className="fa-solid fa-bars" />
           </div>
@@ -54,7 +63,6 @@ const Navbar = () => {
             <a href="/corporate">Corporates</a>
             <a href="/">Offer</a>
             <a href="/">Gift Cards</a>
-            
           </div>
         </nav>
       </div>

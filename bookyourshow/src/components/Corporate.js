@@ -1,6 +1,6 @@
 import React from 'react'
 import '../style/Corporate.css'
-import Navbar from './Navbar';
+
 const Corporate = () => {
   const sections = [
     {
@@ -41,7 +41,7 @@ const Corporate = () => {
   ];
   return (
     <>
-  
+    
       <div className="App">
         <header className="header">
           <div className="header-content">
@@ -129,7 +129,7 @@ const Corporate = () => {
             className="section"
             style={{
               display: "flex",
-              flexDirection: (index + 1) % 2 == 0 ? "row" : "row-reverse",
+              flexDirection: (index + 1) % 2 === 0 ? "row" : "row-reverse",
             }}
           >
             <div className="section-content">
@@ -170,7 +170,45 @@ const Corporate = () => {
             <button className="cta-button">Access the complete suite</button>
           </div>
         </div>
-        
+        <div className="faq-container">
+          <h2>FREQUENTLY ASKED QUESTIONS</h2>
+          <div className="faq-columns">
+            <div className="faq-column1">
+              <h3>General Queries</h3>
+              <ul>
+                <li>How will BookMyShow help grow my business?</li>
+                <li>Whom should I use the BookMyShow vouchers for?</li>
+                <li>Why are Incentives important?</li>
+                <li>Where can the customers redeem the vouchers?</li>
+                <li>What are the flexibility options for your service?</li>
+                <li>
+                  If I have multiple admits on the voucher, can I split them?
+                </li>
+                <li>Can I use these vouchers in any city of India?</li>
+                <li>Who can redeem the voucher?</li>
+              </ul>
+            </div>
+            <div className="faq-column2">
+              <h3>Logistic Queries</h3>
+              <ul>
+                <li>Where can one redeem a Gift Voucher?</li>
+                <li>Where can one redeem the WinPin voucher?</li>
+                <li>Where can one redeem the Movie Pack voucher?</li>
+                <li>For any concern & escalations, whom do I contact?</li>
+              </ul>
+            <div className="faq-column3">
+              <h3>Payment Queries</h3>
+              <ul>
+                <li>What is the mode of payment?</li>
+                <li>
+                  How do I arrange for a larger corporate order? Whom do I
+                  contact for more information regarding this?
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
