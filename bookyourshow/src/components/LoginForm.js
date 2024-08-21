@@ -2,8 +2,8 @@ import React from "react";
 import '../style/allcss.css'
 const LoginForm = ({ handleClose }) => {
   return (
-    <div className="popup-overlay1">
-      <div className="popup-content1">
+    <div className="popup-overlay">
+      <div className="popup-content">
         <button className="close-btn" onClick={handleClose}>
           &times;
         </button>

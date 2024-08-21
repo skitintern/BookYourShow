@@ -11,8 +11,8 @@ const Location = ({ isOpen, onClose }) => {
      if (!isOpen) return null;
     
   return (
-    <div className="popup-overlay" onClick={onClose}>
-      <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+    <div className="popup-overlay1" onClick={onClose}>
+      <div className="popup-content1" onClick={(e) => e.stopPropagation()}>
         <input
           type="text"
           placeholder="Search for your city"

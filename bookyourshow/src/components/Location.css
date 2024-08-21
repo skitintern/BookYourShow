@@ -1,5 +1,6 @@
-.popup-overlay{
+.popup-overlay1{
   position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
@@ -11,7 +12,7 @@
   z-index: 1000;
 }
 
-.popup-content {
+.popup-content1 {
  
   background-color: white;
   padding: 30px;

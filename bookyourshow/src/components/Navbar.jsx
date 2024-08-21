@@ -78,7 +78,7 @@ const Navbar = () => {
             <a href="/stream">Buzz</a>
           </div>
           <div className="s-right">
-            <a href="/">ListYourShow</a>
+            <a href="/listyourshow">ListYourShow</a>
             <a href="/corporate">Corporates</a>
             <a href="/">Offer</a>
             <a href="/">Gift Cards</a>
