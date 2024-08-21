@@ -47,7 +47,7 @@ const Moviedetail =()=> {
                 <p style={{display:"flex",gap:"10px"}}>
                     {e.cast.map((i,id)=>{
                        return(
-                        <p key={id}>{i}</p>
+                        <p key={id}>{i} </p>
                        )
                     })}
                 </p>

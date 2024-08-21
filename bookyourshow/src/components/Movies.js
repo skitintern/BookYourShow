@@ -170,7 +170,7 @@ const MovieCard = ({ movie }) => {
     }}>
       <img
         src={
-          "https://www.youngisthan.in/wp-content/uploads/2015/07/Drishyam.jpg"
+          `${movie.movie_thumbnail}`
         }
         alt={`${movie.movie_name} Thumbnail`}
         className={"thumbnail"}
