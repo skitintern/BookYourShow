@@ -50,6 +50,21 @@
   flex-wrap: wrap;
 
 }
+.card-body{
+  display: flex;
+
+
+text-align: center;
+  flex-direction: column;
+}
+.card-body h4{
+  padding-top: 6px;
+   
+}
+.card-body p{
+  color:#666666;
+
+}
 .card img {
   width: 200px;
   margin-inline: 20px;

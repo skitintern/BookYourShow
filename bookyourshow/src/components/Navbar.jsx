@@ -5,26 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 import LoginForm from '../components/LoginForm'
 import Location from './Location';
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 const Navbar = () => {
-
   const [showLogin, setShowLogin] = useState(false);
  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
- const[moviename , setmovie]=useState();
-
-
-  const handleclick = (e)=>{
-       setmovie(e.target.value);
-   
-       }
-      
-       const handleSearch = (e) => {
-        e.preventDefault();
-        if (moviename) {
-          window.location.href = `/movie/${moviename}`;
-        }
-    };
 
   const handleLoginClick = () => {
     setShowLogin(true);
@@ -47,16 +34,14 @@ const Navbar = () => {
               alt="logo"
               onClick={() => (window.location.href = "/")}
             />
-            <form className="inp" onSubmit={handleSearch}>
+            <div className="inp">
               <FontAwesomeIcon icon={faSearch} id="icon" />
 
               <input
                 type="text"
                 placeholder=" Search for Movies, Events, Plays, Sports and Activaties"
-                value={moviename}
-                onChange={handleclick}
               />
-            </form>
+            </div>
           </div>
           <div className="right">
             <div className="navbar-location" onClick={togglePopup}>
