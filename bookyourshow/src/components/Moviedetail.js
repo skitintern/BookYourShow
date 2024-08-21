@@ -35,6 +35,7 @@ const Moviedetail =()=> {
   
 
   return (
+
     <div style={{padding:'40px'}}>
       {loading&&<Loader/>}
   

@@ -43,7 +43,7 @@ const Navbar = () => {
         <nav className="fnav">
           <div className="left">
             <img
-              src="logo-no-background.png"
+              src="/logo-no-background.png"
               alt="logo"
               onClick={() => (window.location.href = "/")}
             />
