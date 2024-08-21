@@ -4,6 +4,7 @@ import'../style/allcss.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 import LoginForm from '../components/LoginForm'
+import Location from './Location';
 
 const Navbar = () => {
 
