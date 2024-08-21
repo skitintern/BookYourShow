@@ -208,7 +208,7 @@
 .cta-section {
      background-color: #fff;
      align-items: center;
-   
+   padding: 10px;
      height: 10vh;
  width: 100%;
  margin: 0 auto;
@@ -230,6 +230,55 @@
 
 .cta-button:hover {
   background-color: #d32f2f;
+}
+.faq-container {
+  padding:5vh 22vh;
+
+  background-color: #f9f9f9;
+}
+
+.faq-container h2 {
+  text-align: center;
+  margin-bottom: 10vh;
+  font-weight: 600;
+}
+
+.faq-columns {
+  display: flex;
+    cursor: pointer;
+  justify-content: space-around;
+}
+
+.faq-column1 {
+  width: 40%;
+}
+.faq-column2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.faq-column1 h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.faq-column2 h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.faq-columns ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-columns li {
+  margin-bottom: 10px;
+  line-height: 5vh;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-weight: 500;
 }
 
 
@@ -266,6 +315,7 @@
     margin: 10px;
   }
 }
+
 
 @media (max-width: 509px) {
   .header h3 {

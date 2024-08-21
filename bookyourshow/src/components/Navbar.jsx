@@ -6,8 +6,11 @@ import {faSearch} from '@fortawesome/free-solid-svg-icons';
 import LoginForm from '../components/LoginForm'
 
 const Navbar = () => {
+
   const [showLogin, setShowLogin] = useState(false);
-  const[moviename , setmovie]=useState();
+ const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+ const[moviename , setmovie]=useState();
 
 
   const handleclick = (e)=>{
@@ -29,6 +32,10 @@ const Navbar = () => {
   const handleClose = () => {
     setShowLogin(false);
   };
+
+   const togglePopup = () => {
+     setIsPopupOpen(!isPopupOpen);
+   };
   return (
     <div className="navbar">
       <div>
@@ -51,8 +58,11 @@ const Navbar = () => {
             </form>
           </div>
           <div className="right">
-            <p>Location</p>
-            <button onClick={handleLoginClick}>Sign In</button>
+            <div className="navbar-location" onClick={togglePopup}>
+              Location ⬇
+            </div>
+            <Location isOpen={isPopupOpen} onClose={togglePopup} />
+            <button className='btnsignin' onClick={handleLoginClick}>Sign In</button>
             {showLogin && <LoginForm handleClose={handleClose} />}
             <i className="fa-solid fa-bars" />
           </div>
@@ -71,7 +81,6 @@ const Navbar = () => {
             <a href="/corporate">Corporates</a>
             <a href="/">Offer</a>
             <a href="/">Gift Cards</a>
-            
           </div>
         </nav>
       </div>
