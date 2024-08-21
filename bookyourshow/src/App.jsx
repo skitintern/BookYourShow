@@ -10,6 +10,7 @@ import Moviedetail from './components/Moviedetail';
 import Navbar from './components/Navbar';
 import Activity from './components/Activity'
 import ListyourShow from './components/ListyourShow';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
       
     </Routes>
    </Router>
-
+<Footer/>
     </>
     );
 }

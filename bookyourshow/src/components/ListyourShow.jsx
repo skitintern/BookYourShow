@@ -48,60 +48,58 @@ const ListyourShow = () => {
         <section className="host-section">
           <h2>What can you host?</h2>
           <p>
-            As the purveyor of entertainment, BookMyShow enables your event with
-            end to end solutions from the time you register to the completion of
-            the event. Let’s look at what you can host.
+            As the purveyor of entertainment, BookYourShow enables your event
+            with end to end solutions from the time you register to the
+            completion of the event. Let’s look at what you can host.
           </p>
           <div className="host-options">
             <div className="optt1">
-
-            <div className="host-option">
-              <img
-                src="https://assets-in.bmscdn.com/static/2021/06/perf.png"
-                alt="Performances"
-              />
-              <p>Performances</p>
-            </div>
-            <div className="host-option">
-              <img
-                src="https://assets-in.bmscdn.com/static/2021/06/experiencess.png"
-                alt="Experiences"
-              />
-              <p>Experiences</p>
-            </div>
-            <div className="host-option">
-              <img
-                src="https://assets-in.bmscdn.com/static/2021/06/expositionss.png"
-                alt="Expositions"
-              />
-              <p>Expositions</p>
-            </div>
+              <div className="host-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/perf.png"
+                  alt="Performances"
+                />
+                <h3>Performances</h3>
+              </div>
+              <div className="host-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/experiencess.png"
+                  alt="Experiences"
+                />
+                <h3>Experiences</h3>
+              </div>
+              <div className="host-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/expositionss.png"
+                  alt="Expositions"
+                />
+                <h3>Expositions</h3>
+              </div>
             </div>
             <div className="optt2">
-
-            <div className="host-option">
-              <img
-                src="https://assets-in.bmscdn.com/static/2021/06/partiess.png"
-                alt="Parties"
-              />
-              <p>Parties</p>
-            </div>
-            <div className="host-option">
-              <img
-                src="https://assets-in.bmscdn.com/static/2021/06/sport.png"
-                alt="Sports"
-              />
-              <p>Sports</p>
-            </div>
-            <div className="host-option">
-              <img
-                src="https://assets-in.bmscdn.com/static/2021/06/conferencess.png"
-                alt="Conferences"
-              />
-              <p>Conferences</p>
+              <div className="host-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/partiess.png"
+                  alt="Parties"
+                />
+                <h3>Parties</h3>
+              </div>
+              <div className="host-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/sport.png"
+                  alt="Sports"
+                />
+                <h3>Sports</h3>
+              </div>
+              <div className="host-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/conferencess.png"
+                  alt="Conferences"
+                />
+                <h3>Conferences</h3>
+              </div>
             </div>
           </div>
-            </div>
           <button className="list-show-button">List your show</button>
         </section>
 
@@ -113,29 +111,51 @@ const ListyourShow = () => {
             to life.
           </p>
           <div className="service-options">
-            <div className="service-option">
-              <img src="path_to_icon" alt="Online Sales & Marketing" />
-              <p>Online Sales & Marketing</p>
+            <div className="optt1">
+              <div className="service-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/online-saless.png"
+                  alt="Online Sales & Marketing"
+                />
+                <h3>Online Sales & Marketing</h3>
+              </div>
+              <div className="service-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/pricings.png"
+                  alt="Pricing"
+                />
+                <h3>Pricing</h3>
+              </div>
+              <div className="service-option">
+                <img
+                  src="	https://assets-in.bmscdn.com/static/2021/06/food.png"
+                  alt="Food & Beverages"
+                />
+                <h3>Food & Beverages, Stalls and the works!</h3>
+              </div>
             </div>
-            <div className="service-option">
-              <img src="path_to_icon" alt="Pricing" />
-              <p>Pricing</p>
-            </div>
-            <div className="service-option">
-              <img src="path_to_icon" alt="Food & Beverages" />
-              <p>Food & Beverages, Stalls and the works!</p>
-            </div>
-            <div className="service-option">
-              <img src="path_to_icon" alt="On ground support" />
-              <p>On ground support & gate entry management</p>
-            </div>
-            <div className="service-option">
-              <img src="path_to_icon" alt="Reports" />
-              <p>Reports & business insights</p>
-            </div>
-            <div className="service-option">
-              <img src="path_to_icon" alt="POS" />
-              <p>POS, RFID, Turnstiles & more...</p>
+            <div className="optt2">
+              <div className="service-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/on-ground-support.png"
+                  alt="On ground support"
+                />
+                <h3>On ground support & gate entry management</h3>
+              </div>
+              <div className="service-option">
+                <img
+                  src="https://assets-in.bmscdn.com/static/2021/06/report.png"
+                  alt="Reports"
+                />
+                <h3>Reports & business insights</h3>
+              </div>
+              <div className="service-option">
+                <img
+                  src="	https://assets-in.bmscdn.com/static/2021/06/rfids.png"
+                  alt="POS"
+                />
+                <h3>POS, RFID, Turnstiles & more...</h3>
+              </div>
             </div>
           </div>
           <button className="list-show-button">List your show</button>

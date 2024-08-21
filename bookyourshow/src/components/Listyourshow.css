@@ -1,6 +1,7 @@
 .event-page {
   font-family: Arial, sans-serif;
-  padding: 20px;
+      max-width: 917px;
+    margin: 80px auto;
   text-align: center;
 }
 
@@ -18,9 +19,12 @@ h2 {
     margin-bottom: 16px;
 }
 
-p {
-  color: #777;
-  margin-bottom: 30px;
+.host-section .services-section p {    color: rgb(31, 37, 58);
+    padding: 0px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
 }
 .optt1 , .optt2{
     display: flex;
@@ -36,15 +40,18 @@ p {
 .host-option, .service-option {
  
   margin: 16px;
-      width: calc(33.3333% - 32px);
-      padding: 32px 0px;
+      width: calc(35.3333% - 32px);
+      padding: 32px 10px;
  background: rgb(236, 245, 255);
  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 2px;
-    border-radius: 4px;
+    border-radius: 8px;
     align-items: center;
     cursor: pointer;
         transition: 0.3s ease-in-out;
   text-align: center;
+}
+.host-option:hover, .service-option:hover {
+      transform: translateY(-5px);
 }
 
 .host-option img, .service-option img {
@@ -56,6 +63,8 @@ p {
 .list-show-button {
   background-color: #f05a28;
   color: #fff;
+  width: 30vh;
+  height: 8vh;
   border: none;
   padding: 10px 20px;
   margin-top: 20px;
