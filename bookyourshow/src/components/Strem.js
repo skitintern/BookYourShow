@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import "../style/allcss.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

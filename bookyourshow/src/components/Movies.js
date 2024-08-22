@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+
 import "../style/allcss.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
 import Loader from "./loader";
-import { Navigate, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 const Movies = () => {
   const [loading, setloading] = useState(false);

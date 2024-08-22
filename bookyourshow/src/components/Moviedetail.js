@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import Navbar from './Navbar';
+
 import "../style/allcss.css";
 import axios from 'axios';
 import Loader from './loader';

@@ -73,9 +73,8 @@ const Navbar = () => {
             <a href="/movie">Movies</a>
             <a href="/stream">Stream</a>
             <a href="/stream">Events</a>
-            <a href="/stream">Plays</a>
+            <a href="/plays">Plays</a>
             <a href="/activity">Activities</a>
-            <a href="/stream">Buzz</a>
           </div>
           <div className="s-right">
             <a href="/listyourshow">ListYourShow</a>
