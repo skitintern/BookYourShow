@@ -189,7 +189,7 @@ const Home = () => {
       <div className="container">
         <div className="up">
           <h2>Explore Fun Activities</h2>
-          <p onClick={() => navigate("/movie")}>See More</p>
+          <p onClick={() => navigate("/activity")}>See More</p>
         </div>
         <div className="card">
           <img
@@ -218,7 +218,7 @@ const Home = () => {
       <div className="container">
         <div className="up">
           <h2>Outdoor Events</h2>
-          <p onClick={() => navigate("/movie")}>See More</p>
+          <p onClick={() => navigate("/listyourshow")}>See More</p>
         </div>
         <div className="card">
           <img

@@ -1,109 +1,4 @@
-/* * {
-  margin: 0%;
-  padding: 0%;
-  overflow-x: hidden;
-  
-  font-family: "Mulish", sans-serif;
-}
-.fnav {
-  display: flex;
-  padding: 15px;
- 
-  justify-content: space-around;
-  background-color: rgb(28, 28, 51);
-  color: white;
-}
-.fnav img {
-  width: 30%;
-  height: 100%;
-  align-items: start;
- 
-}
-.fnav .left {
-  display: flex;
-  height: 7vh;
-}
-.inp {
-  
-  margin-inline: 20px;
-  display: flex;
-  justify-content: space-between;
-  width: 90vh;
-  border-radius: 10px;
-overflow: hidden;
-  background-color: white;
-  border: 2px solid black;
-}
-.inp #icon {
-  color: black;
-  margin: 17px 25px;
-}
-.left input {
-  width: 90%;
-  color: #999999;
-
-  background: none;
-  border: none;
- 
-  text-align: left;
- 
-}
-.fnav .right {
-  display: flex;
-  margin-top: 11px;
-}
-.right button {
-  width: 80px;
-  height: 27px;
-  background-color: #fc3a5b;
-  color: white;
-  border: none;
-  border-radius: 4px;
-
-  margin-inline: 22px;
-}
-.right i {
-  font-size: 22px;
-  margin-inline: 22px;
-}
-.right p {
-  font-size: 19px;
-  margin-inline: 22px;
-}
-
-.sec-nav {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  padding: 11px;
-  background-color: rgb(28, 28, 51);
-  color: white;
-}
-.sec-nav p:hover {
-  font-weight: 600;
-  cursor: pointer;
-  color: rgb(252, 87, 114);
-}
-.s-left {
-  display: flex;
-}
-.s-left a {
-  color: white;
-  margin-inline: 15px;
-}
-.s-left a:hover{
-  color: rgb(252, 87, 114);
-}
-.s-right p {
-  margin-inline: 15px;
-}
-.s-right {
-  display: flex;
-}
-
-
- */
- * {
+* {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -147,11 +42,12 @@ overflow: hidden;
 
 .inp #icon {
   color: black;
-  margin: 17px 25px;
+  font-size: 20px;
+  margin: 12px 5px;
 }
 
 .left input {
-  padding: 15px;
+  padding:5px;
   width: 90%;
   background: none;
    font-size: 18px;
@@ -167,10 +63,10 @@ overflow: hidden;
 }
 
 .right .btnsignin {
-  width: 15vh;
-    padding: 5px;
+  width: 16vh;
+  
   height: 5vh;
-   font-size: 20px;
+   font-size: 18px;
   background-color: #fc3a5b;
   color: white;
   border: none;
@@ -184,7 +80,7 @@ overflow: hidden;
 }
 .navbar-location{
   text-align: center;
-  width: 14vh;
+  width: 16vh;
   height: 4vh;
   padding: 5px;
     border-radius: 5px;

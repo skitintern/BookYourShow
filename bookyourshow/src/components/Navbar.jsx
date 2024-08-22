@@ -52,7 +52,7 @@ const Navbar = () => {
 
               <input
                 type="text"
-                placeholder=" Search for Movies, Events, Plays, Sports and Activaties"
+                placeholder=" Search for Movies, Events, Plays, Sports"
                 value={moviename}
                 onChange={handleclick}
               />
