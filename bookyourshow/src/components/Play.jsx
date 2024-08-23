@@ -3,6 +3,7 @@ import './Play.css'
 const Play = () => {
   return (
     <div className="events-page">
+    
       <div className="leftcontent">
         <h2>Filter</h2>
         <div className="options">
@@ -19,7 +20,6 @@ const Play = () => {
               <summary>Categories</summary>
               <a href="/">Theatre</a>
               <a href="/">Story Telling</a>
-             
             </details>
           </div>
           <div className="opt3">
@@ -81,16 +81,16 @@ const Play = () => {
 
 
 const EventCard = ({
-  title,
-  date,
-  venue,
-  language,
-  price,
-  imageUrl,
-  promoted,
+    title,
+    date,
+    venue,
+    language,
+    price,
+    imageUrl,
+    promoted,
 }) => {
-  return (
-    <div className="event-card">
+    return (
+        <div className="event-card">
       {promoted && <span className="promoted">PROMOTED</span>}
       <img src={imageUrl} alt={title} />
       <div className="event-details">
@@ -100,7 +100,9 @@ const EventCard = ({
         <p>{price}</p>
       </div>
     </div>
+        
   );
 };
+
 
 export default Play
