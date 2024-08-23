@@ -12,8 +12,6 @@ const Navbar = () => {
  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
  const[moviename , setmovie]=useState();
-
-
   const handleclick = (e)=>{
        setmovie(e.target.value);
    
